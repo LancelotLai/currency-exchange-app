@@ -1,4 +1,10 @@
-# Intro
+# User Guide
+
+- Conversion & Exchange Rate History Web
+
+- Dockerize and used git action for CI/CD
+
+## Details
 
 First, run the development server:
 
@@ -42,4 +48,11 @@ start docker image with:
 
 ``` bash
 docker-compose up --build
+```
+
+use git action for ci/cd:
+
+``` bash
+node -- development & production
+docker -- production
 ```
