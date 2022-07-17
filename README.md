@@ -1,6 +1,6 @@
 # User Guide
 
-- Conversion & Exchange Rate History Web
+- Conversion & Exchange Rate History Web, total 3 pages (/, /latest, /history)
 
 - Dockerize and used git action for CI/CD
 
