@@ -1,0 +1,68 @@
+{
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:react/jsx-runtime"
+  ],
+  "rules": {
+    // Other rules
+    "@next/next/no-img-element": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "max-len": "off",
+    "no-nested-ternary": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-filename-extension": "off",
+    "react/react-in-jsx-scope": "off",
+    "comma-dangle": "off",
+    "operator-linebreak": "off",
+    "no-unused-vars": "off",
+    "no-param-reassign": "off",
+    "no-console": "off",
+    "no-use-before-define": "off",
+    "no-underscore-dangle": "off",
+    "import/no-unresolved": "off",
+    "no-constant-condition": "off",
+    "global-require": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.stories.ts",
+          "**/*.stories.tsx"
+        ]
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "hrefLeft",
+          "hrefRight"
+        ],
+        "aspects": [
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ]
+  },
+  "plugins": [
+    "react",
+    "better-styled-components",
+    "react-hooks"
+  ]
+}
