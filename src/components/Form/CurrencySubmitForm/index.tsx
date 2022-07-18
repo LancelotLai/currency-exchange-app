@@ -80,8 +80,9 @@ const CurrencySubmitForm = ({ baseList, ...props }:CurrencySubmitFormProps) => {
       } else if (
         moment(data?.endDate).format('YYYY-MM-DD') ===
         // eslint-disable-next-line react/destructuring-assignment
-          moment(data?.startDate).format('YYYY-MM-DD') && baseList[data?.base]) {
-        console.log(123);
+        moment(data?.startDate).format('YYYY-MM-DD') &&
+        moment(data?.endDate).format('YYYY-MM-DD') === moment().format('YYYY-MM-DD')
+          && baseList[data?.base]) {
         router.push({
           pathname: '/latest',
           query: {
@@ -90,7 +91,6 @@ const CurrencySubmitForm = ({ baseList, ...props }:CurrencySubmitFormProps) => {
         });
         // eslint-disable-next-line react/destructuring-assignment
       } else if (baseList[data?.base]) {
-        console.log(456);
         router.push({
           pathname: '/history',
           query: {
